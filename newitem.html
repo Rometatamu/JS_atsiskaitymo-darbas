@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+         <div class="logo-wrapper">
+            <div class="logo-box">
+             <img src="./images/icons8-flower-64.png" alt="logo-image"/>
+             <h1>Antėjos<br/><span>ŽIEDŲ NAMAI</span></h1>
+            </div>
+            <button id="backToMain-btn" class="backToMain-btn">Grįžti<span class="mobile-arrow"><img src="./images/left-arrow-50.png" alt="back-arrow"/></span></button>
+         </div>
+        </header> 
+        <div class="new-item-wrapper">
+            <div class="form">
+             <h5>Gėlių tipas</h5>
+             <select name="type" id="type">
+                <option value=""></option>
+                <option value="Puokštės">Puokštės</option>
+                <option value="Dirbtinės">Dirbtinės</option>
+                <option value="Stabilizuotos">Stabilizuotos</option>
+             </select>
+             <input id="image_url" placeholder="Nuotrauka pateikta http://somecontent.io?lll/id formatu" />
+             <input id="name" placeholder="Pavadininimas" />
+             <input id="description" placeholder="Prekės aprašymas" />
+             <input id="price" placeholder="Kaina, pvz: 99.99 " />
+             <input id="location" placeholder="Miestas" />
+             <button class="new-item-btn" id="add-item-btn">Pridėti</button>
+             <p id="success-message"></p>
+            </div> 
+            <img class="form-img" src="./images/icon-flower.svg" alt="form decoration-painted flower">
+        </div>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-section">
+                    <div class="logo-box">
+                        <img src="./images/icons8-flower-64.png" alt="logo-image"/>
+                        <h1>Antėjos<br/><span>ŽIEDŲ NAMAI</span></h1>
+                    </div> 
+                    <br/>   
+                    <h3>Privatumas, prekių pirkimas</h3> 
+                    <ul>
+                        <li><a href="#">Privatumo politika</a></li>
+                        <li><a href="#">Pirkimo taisyklės</a></li>
+                        <li><a href="#">Atsiskaitymo ir prekių pristatymo sąlygos</a></li>
+                    </ul>   
+                </div>
+                <div class="footer-section">
+                    <h3>Antėjos slėnis, UAB</h3>
+                    <h4>Adresas:</h4>
+                    <p>Gandrų g. 10,</p>
+                    <p>01304 Vilnius</p>
+                    <h4>Telefonas:</h4>
+                    <p>+370 670 90099</p>
+                    <h4>El. paštas:</h4>
+                    <p>info@antejosslenis.lt</p>
+
+                </div>
+                <div class="footer-section">
+                    <h3>Gėlės puokštės</h3>
+                    <ul>
+                        <li onclick="goBackToMain(`Puokštės`)">Puokštės</li>
+                        <li onclick="goBackToMain('Dirbtinės')">Dirbtinės</li>
+                        <li onclick="goBackToMain('Stabilizuotos')">Stabilizuotos</li>
+                        <li onclick="goBackToMain('')">Visos</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Sekite mus:</h3>
+                    <div>
+                     <a href="https://www.facebook.com/login.php/"><img src="./images/facebook.svg" alt="facebook-icon"/></a>
+                     <a href="https://www.instagram.com/?hl=en"><img src="./images/instagram.svg" alt="instagram-icon"/></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer> 
+    <div>  
+    <script src="./script3.js"></script>
+
+</body>
+</html>
